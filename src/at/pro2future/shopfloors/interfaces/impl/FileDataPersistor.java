@@ -64,6 +64,7 @@ public class FileDataPersistor implements DataPersistor{
 		while(econtent.hasNext()) {
 			EObject eo = econtent.next();
 			target.getContents().add(eo);
+			
 		}
 		
 		target.save(Collections.EMPTY_MAP);
