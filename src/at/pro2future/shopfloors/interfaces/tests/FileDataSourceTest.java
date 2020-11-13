@@ -9,10 +9,13 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
 
+import ProcessCore.ProcessCorePackage;
+
 
 public class FileDataSourceTest {
 	public static void main(String[] args) {
 		FileDataSource pers = new FileDataSource("helloWorld.xmi");
+		pers.registerPackage(ProcessCore.ProcessCorePackage.eNS_URI, ProcessCorePackage.eINSTANCE);
 
 		//register the generated model/code with the following line
 		//pers.registerPackage(YourPackage.eNS_URI, YourPackage.eINSTANCE);

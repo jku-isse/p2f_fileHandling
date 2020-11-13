@@ -7,6 +7,8 @@ import java.util.List;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EcoreFactory;
 
+import ProcessCore.ProcessCoreFactory;
+import ProcessCore.XmlRoot;
 import at.pro2future.shopfloors.interfaces.impl.FileDataPersistor;
 
 public class FileDataPersistorTest {
@@ -16,8 +18,8 @@ public class FileDataPersistorTest {
 		//register the generated model/code with the following line
 		//pers.registerPackage(YourPackage.eNS_URI, YourPackage.eINSTANCE);
 		
-		
-		EObject o = EcoreFactory.eINSTANCE.createEObject();
+
+		XmlRoot o = ProcessCoreFactory.eINSTANCE.createXmlRoot();
 		
 		//if o was of a type with a property name, it could be set like this
 		//o.setName("name");

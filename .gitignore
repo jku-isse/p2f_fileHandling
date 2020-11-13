@@ -1,0 +1,8 @@
+/target/
+*.xmi
+*.prefs
+*.class
+.classpath
+*.prefs
+*.class
+*.xmi
